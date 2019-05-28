@@ -1,1 +1,1 @@
-sudo docker run -v /home/tahara/docker:/works -it --rm --runtime=nvidia tahara/keras-sample works/cifar10_cnn.py
+sudo docker run -v /home/tahara/docker:/works -it --rm --runtime=nvidia tahara/keras-sample python works/cifar10_cnn.py
