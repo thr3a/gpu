@@ -1,19 +1,20 @@
-# 環境
+# 必要な環境
 
-- todo
+- Docker
+- [nvidia-docker2](https://github.com/NVIDIA/nvidia-docker)
 
 # 使い方
 
 準備
 
 ```
-git clone xxxx
-cd xxxx
-./build.sh
+git clone git@gitlab.userlocal.jp:tahara/gpu-benchmark.git
+cd gpu-benchmark
+./1_build.sh
 ```
 
 実行
 
 ```
-time ./start_benchmark.sh
+time ./2_benchmark.sh
 ```
