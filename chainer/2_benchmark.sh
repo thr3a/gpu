@@ -1,0 +1,1 @@
+docker run -v `pwd`:/work -v /tmp:/root/.chainer/dataset -it --rm --runtime=nvidia tahara/chainer-sample python3 /work/mnist_cnn.py --device 0

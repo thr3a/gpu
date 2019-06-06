@@ -1,1 +1,0 @@
-docker run -v `pwd`:/works -it --rm --runtime=nvidia tahara/pytorch-sample python works/mnist_cnn.py
