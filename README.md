@@ -8,13 +8,19 @@
 準備
 
 ```
-git clone git@gitlab.userlocal.jp:tahara/gpu-benchmark.git
-cd gpu-benchmark
-./1_build.sh
+make build
 ```
 
 実行
 
 ```
-time ./2_benchmark.sh
+make benchmark1
+make benchmark2
+```
+
+マルチコアCPUでやる場合
+
+```
+# 4コアで実行する場合
+make benchmark1 CPUS=0-3
 ```
