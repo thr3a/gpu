@@ -14,6 +14,16 @@ from keras.layers import Dense, Dropout, Activation, Flatten
 from keras.layers import Conv2D, MaxPooling2D
 import os
 
+from keras.backend.tensorflow_backend import set_session
+import tensorflow as tf
+config = tf.ConfigProto(
+    gpu_options=tf.GPUOptions(
+        visible_device_list="0",
+        allow_growth=True
+    )
+)
+set_session(tf.Session(config=config))
+
 batch_size = 32
 num_classes = 10
 epochs = 10
